@@ -1,11 +1,454 @@
 html {
-  font-family: Helvetica;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 18px;
   color: black;
 }
-
+img{
+  width: 100%;
+  height: 100%;
+}
 body{
 }
+
+header {
+  height: 64px;
+  display: flex;
+}
+
+.main-banner h3{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    }
+
+.links {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+.logo-header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.logo-header img {
+  justify-content: center;
+  padding-left: 16px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.links a {
+  display: none;
+}
+
 .main-banner {
-  display: inline-block;
+  display: flex;
+  width:100%;
+  position: fixed;
+  background-color: white;
+  height: 64px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p {
+  text-align: left;
+  font-size: 12px;
+}
+
+.author p {
+  font-size: 12px;
+  padding: 12px;
+  display: flex;
+}
+
+.school .left{
+  display:flex;
+  justify-content: left;
+  height: 100%;
+}
+
+.school .right{
+  padding: 18px;
+  display:flex;
+  flex-direction: column;
+}
+
+.school .right p {
+  font-size: 16px;
+}
+
+.school h2 {
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+
+.video{
+  width:92%;
+  height: 100%;
+  padding-left: 16px;
+}
+
+.school {
+  background-color: lightgrey;
+  display:flex;
+  flex-direction: column;
+}
+.school img{
+  width: 100%;
+}
+
+.button span {
+  background-color: #696969;
+  padding: 8px;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.button :hover {
+  background-color: #1e90ff;
+  transition-delay: 1.5s ease-out;
+  width: 8rem;
+}
+
+.main-content .left{
+  width: 60%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.main-content .right{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-content .right .article-list{
+  background-color: white;
+  padding: 16px;
+}
+
+.main-content .right p {
+ padding: 12px;
+ padding-left: 0px;
+}
+
+.main-content .left p {
+  padding: 24px;
+  padding-left: 0px;
+}
+
+.main-content a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.main-content .right .article-list h4{
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  font-weight: bold;
+  }
+
+.main-content .right .article-list img{
+  height: 100%;
+  justify-content: left;
+  display: flex;
+  margin: auto;
+  }
+
+.links span {
+  display: none;
+  }
+
+.nav-bar img {
+  display: flex;
+  padding: 14px;
+  padding-right: 7px;
+}
+
+.thesis-list{
+  display: flex;
+  flex-direction: row;
+}
+.main-content {
+  background-color: white;
+  display:flex;
+  padding:24px 32px;
+}
+
+.main-content img{
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.grid span {
+  padding: 24px;
+  text-align: left;
+  width: 100;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 8px solid white;
+}
+
+.grid h2 {
+  text-align: center;
+}
+.main-content .right .article-list img{
+  width: 100%;
+  }
+
+  .school p,
+  .school h2,
+  .school .button{
+    display: flex;
+    padding: 32px;
+    padding-left: 18px;
+  }
+
+  .bottom-thesis h2 {
+    text-align: center;
+    padding: 16px;
+  }
+
+footer {
+  display: flex;
+  border-top: 1px solid grey;
+  background-color: white;
+  padding: 24px;
+}
+
+.terms p {
+  float: right;
+  text-decoration: none;
+  display: flex;
+  font-size: 12px;
+  padding-left: 130px;
+}
+
+  .thesis-right,
+  .wrapper .column h4,
+.wrapper .column img,
+.wrapper .column p,
+  .main-content .left,
+  .main-banner h3
+  {
+    display: none;
+  }
+@media only screen and (min-width: 480px) {
+  .thesis-right,
+  .wrapper .column h4,
+.wrapper .column p,
+.wrapper .column img,
+  .main-content .left,
+  .main-banner h3,
+  .links a {
+    display: flex;
+  }
+
+  .main-banner a {
+    float: right;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav-bar img {
+    display: none;
+  }
+  .main-content .right{
+    width: 40%;
+    padding-left: 24px;
+  }
+  .main-content .right .article-list{
+    flex-direction: row;
+    display: flex;
+    border: 2px solid grey;
+    background-color: white;
+  }
+  .school .right{
+    width: 40%;
+
+  }
+  .school .right p {
+    padding: 24px;
+  }
+  h2 {
+    padding-top: 32px;
+  }
+  .school {
+    padding:24px 32px;
+    flex-direction:row;
+  }
+
+  body > div.main-content > div.right > div:nth-child(3){
+    background: lightgray;
+  }
+
+  .main-content .right .article-list{
+    border: 2px solid grey;
+  }
+
+  .main-content .right .article-list img{
+    width: 35%;
+    justify-content: center;
+    padding: 8px;
+    margin: 0;
+    }
+
+    .school .left{
+      width: 60%;
+      height: 400px;
+    }
+.grid {
+  width: 100%;
+  background-color: lightgray;
+}
+
+.grid .wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.grid .column{
+  width: 32%;
+  height:100%;
+  flex-direction: column;
+    display: flex;
+    padding: 7px;
+}
+
+.grid h4 {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.grid h2 {
+  padding: 32px;
+  font-weight: bold;
+  background color: lightgray;
+  text-align: center;
+}
+
+.grid p {
+  font-style: bold;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.grid span {
+  padding: 16px;
+  padding-left: 8px;
+  text-align: left;
+  width: 100;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: none;
+  font-weight: bold;
+}
+
+.article-text{
+  flex-direction: column;
+  display: flex;
+  padding:16px;
+  justify-content: center;
+}
+
+.grid .text-content {
+  padding: 16px;
+  background-color: white;
+  font-size: 1rem;
+  flex-direction: column;
+  margin: 0;
+}
+
+ .text-content {
+    width: 100%;
+    background: white;
+    margin-top: 2%;
+    justify-content: center;
+    display: flex;
+  }
+
+.grid .class-text :hover {
+    background-color: #1e90ff;
+    transition-delay: 1.5s ease-out;
+    width: auto;
+  }
+.ctext{
+  display: flex;
+  flex-direction: column;
+  }
+div .class-text {
+  display: flex;
+}
+
+.thesis {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid grey;
+}
+
+.thesis-right {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  }
+
+.thesis-list h4 {
+  display: flex;
+  justify-content: right;
+  text-align: left;
+  flex-direction: column;
+  font-weight: bold;
+  padding: 24px;
+  padding-left: 0px;
+  }
+
+.thesis h2 {
+  text-align: center;
+}
+
+body > div.bottom-thesis > div > div.thesis-right > div:nth-child(1) {
+  background-color: lightgrey;
+}
+
+.thesis-list img {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  padding: 16px;
+  }
+
+.thesis-text {
+  flex-direction: column;
+  display: flex;
+  padding:16px;
+}
+
+  .bottom-thesis h2 {
+    text-align: center;
+    padding: 32px;
+  }
 }
